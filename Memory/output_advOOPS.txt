@@ -1,0 +1,311 @@
+[2026-10-09 08:43:56 UTC] vcs -full64 -licqueue '-timescale=1ns/1ns' '+vcs+flush+all' '+warn=all' '-sverilog' design.sv testbench.sv  && ./simv +vcs+lic+wait  
+                         Chronologic VCS (TM)
+       Version X-2025.06-SP1_Full64 -- Fri Oct  9 04:43:57 2026
+
+                    Copyright (c) 1991 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'design.sv'
+Parsing design file 'testbench.sv'
+Top Level Modules:
+       testbench
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+1 module and 0 UDP read.
+recompiling module testbench
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib -L/apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib  -Wl,-rpath-link=./   objs/amcQw_d.o  _286_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs      -lvcsnew -ldistsimclient -lsimprofile -luclinative /apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .621 seconds to compile + .549 seconds to elab + .578 seconds to link
+Chronologic VCS simulator copyright 1991-2025
+Contains Synopsys proprietary information.
+Compiler version X-2025.06-SP1_Full64; Runtime version X-2025.06-SP1_Full64;  Oct  9 04:43 2026
+====================================================
+ Constrained-Random Memory Verification Testbench
+ Memory: 16 x 8 bits
+ Fixed UID: 7
+====================================================
+[CHECK] Reset output is zero: PASS
+
+--- Phase 1: Initialize all memory locations ---
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0x0 data=0x30
+UID=7 op=WRITE addr=0x0 data=0x30 seed=0x1aceb00b
+[MODEL] WRITE mem[0] = 0x30
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0x1 data=0x31
+UID=7 op=WRITE addr=0x1 data=0x31 seed=0x1aceb00b
+[MODEL] WRITE mem[1] = 0x31
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0x2 data=0x32
+UID=7 op=WRITE addr=0x2 data=0x32 seed=0x1aceb00b
+[MODEL] WRITE mem[2] = 0x32
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0x3 data=0x33
+UID=7 op=WRITE addr=0x3 data=0x33 seed=0x1aceb00b
+[MODEL] WRITE mem[3] = 0x33
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0x4 data=0x34
+UID=7 op=WRITE addr=0x4 data=0x34 seed=0x1aceb00b
+[MODEL] WRITE mem[4] = 0x34
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0x5 data=0x35
+UID=7 op=WRITE addr=0x5 data=0x35 seed=0x1aceb00b
+[MODEL] WRITE mem[5] = 0x35
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0x6 data=0x36
+UID=7 op=WRITE addr=0x6 data=0x36 seed=0x1aceb00b
+[MODEL] WRITE mem[6] = 0x36
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0x7 data=0x37
+UID=7 op=WRITE addr=0x7 data=0x37 seed=0x1aceb00b
+[MODEL] WRITE mem[7] = 0x37
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0x8 data=0x38
+UID=7 op=WRITE addr=0x8 data=0x38 seed=0x1aceb00b
+[MODEL] WRITE mem[8] = 0x38
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0x9 data=0x39
+UID=7 op=WRITE addr=0x9 data=0x39 seed=0x1aceb00b
+[MODEL] WRITE mem[9] = 0x39
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x3a
+UID=7 op=WRITE addr=0xa data=0x3a seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x3a
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xb data=0x3b
+UID=7 op=WRITE addr=0xb data=0x3b seed=0x1aceb00b
+[MODEL] WRITE mem[11] = 0x3b
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xc data=0x3c
+UID=7 op=WRITE addr=0xc data=0x3c seed=0x1aceb00b
+[MODEL] WRITE mem[12] = 0x3c
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xd data=0x3d
+UID=7 op=WRITE addr=0xd data=0x3d seed=0x1aceb00b
+[MODEL] WRITE mem[13] = 0x3d
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xe data=0x3e
+UID=7 op=WRITE addr=0xe data=0x3e seed=0x1aceb00b
+[MODEL] WRITE mem[14] = 0x3e
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xf data=0x3f
+UID=7 op=WRITE addr=0xf data=0x3f seed=0x1aceb00b
+[MODEL] WRITE mem[15] = 0x3f
+
+--- Phase 2: Randomized operations ---
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+
+--- Phase 3: Inline constraint demonstration ---
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=READ  addr=0x3 data=0x70
+[INLINE] Forced READ at address 3
+UID=7 op=READ  addr=0x3 data=0x70 seed=0x1aceb00b
+[CHECK] UID=7 addr=3 expected=0x33 actual=0x33 PASS
+
+--- Phase 4: constraint_mode() and rand_mode() ---
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=READ  addr=0xa data=0x70
+[MODE] c_default_mix disabled; write_en fixed to READ
+UID=7 op=READ  addr=0xa data=0x70 seed=0x1aceb00b
+[CHECK] UID=7 addr=10 expected=0x70 actual=0x70 PASS
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+
+--- Phase 5: Write-then-read scenario ---
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0x5 data=0xa5
+UID=7 op=WRITE addr=0x5 data=0xa5 seed=0x1aceb00b
+[MODEL] WRITE mem[5] = 0xa5
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=READ  addr=0x5 data=0x70
+[INLINE] Forced READ at address 5
+UID=7 op=READ  addr=0x5 data=0x70 seed=0x1aceb00b
+[CHECK] UID=7 addr=5 expected=0xa5 actual=0xa5 PASS
+
+--- Phase 6: Boundary-address scenario ---
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0x0 data=0x11
+UID=7 op=WRITE addr=0x0 data=0x11 seed=0x1aceb00b
+[MODEL] WRITE mem[0] = 0x11
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=READ  addr=0x0 data=0x70
+[INLINE] Forced READ at address 0
+UID=7 op=READ  addr=0x0 data=0x70 seed=0x1aceb00b
+[CHECK] UID=7 addr=0 expected=0x11 actual=0x11 PASS
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xf data=0xee
+UID=7 op=WRITE addr=0xf data=0xee seed=0x1aceb00b
+[MODEL] WRITE mem[15] = 0xee
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=READ  addr=0xf data=0x70
+[INLINE] Forced READ at address 15
+UID=7 op=READ  addr=0xf data=0x70 seed=0x1aceb00b
+[CHECK] UID=7 addr=15 expected=0xee actual=0xee PASS
+
+--- Phase 7: Additional randomized traffic ---
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+[PRE ] UID=7 seed=0x1aceb00b: preparing transaction
+[POST] UID=7 op=WRITE addr=0xa data=0x70
+UID=7 op=WRITE addr=0xa data=0x70 seed=0x1aceb00b
+[MODEL] WRITE mem[10] = 0x70
+
+====================================================
+ TEST SUMMARY
+ Fixed UID             : 7
+ Transactions generated: 57
+ Writes                : 52
+ Reads                 : 5
+ Read checks           : 5
+ Errors                : 0
+ RESULT: PASS
+====================================================
+$finish called from file "testbench.sv", line 471.
+$finish at simulation time               596000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 596000 ps
+CPU Time:      0.740 seconds;       Data structure size:   0.0Mb
+Fri Oct  9 04:44:00 2026
+Finding VCD file...
+./dump.vcd
+[2026-10-09 08:44:00 UTC] Opening EPWave...
+Done
+EPWave
